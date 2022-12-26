@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2ebe3;
+}
+.container {
+  height: 80vh;
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-radius: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+  border: 1px solid rgb(206, 202, 202);
+}
+.left {
+  display: flex;
+}
+.image {
+  width: 600px;
+}
+.image1 {
+  display: none;
+}
+.right {
+  background: hsl(0, 0%, 100%);
+  padding: 60px;
+  display: block;
+}
+.perfume {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.name {
+  width: 80%;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Fraunces";
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  width: 90%;
+  line-height: 40px;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 40px;
+}
+.span1 {
+  font-size: 50px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: #3c8067;
+  margin-right: 30px;
+}
+.span2 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-decoration: line-through;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.button {
+  width: 350px;
+  margin-top: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: #3c8067;
+  border: none;
+  color: #f2ebe3;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+svg {
+  width: 30px;
+}
+.button:hover {
+  cursor: pointer;
+  background: #073021;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: auto;
+    margin: 10px;
+  }
+  .image1 {
+    display: flex;
+    width: 375px;
+    object-fit: cover;
+  }
+  .image {
+    display: none;
+  }
+  .perfume {
+    font-size: 16px;
+    margin: 0;
+  }
+  .right {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .name {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .span1 {
+    font-size: 40px;
+
+    margin-right: 30px;
+  }
+  .span2 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+  }
+  .button {
+    width: 300px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    width: 750px;
+    display: flex;
+  }
+  .left {
+    width: 372px;
+  }
+  .image1 {
+    display: none;
+  }
+  .image {
+    display: flex;
+    width: 375px;
+    object-fit: cover;
+  }
+  .right {
+    width: 372px;
+    padding: 10px;
+  }
+  .name {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
